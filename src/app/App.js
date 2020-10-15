@@ -8,7 +8,14 @@ class App extends Component {
     return (
       <div className="app">
         <BrowserRouter>
-          <Route exact path='/' component={Home}/>
+          <ul>
+            <li className='{li1}'><Link to= {"/timer"}>在线倒计时器</Link></li>
+            <li className='{li2}'><Link to= {"/counter"}>在线计时器</Link></li>
+            <li className='{li3}'><Link to= {"/"}>Home</Link></li>
+          </ul>
+          <Route exact path={'/'} component={Home}/>
+          <Route exact path={'/counter'} component={Counter}/>
+          <Route exact path={'/timer'} component={Timer}/>
         </BrowserRouter>
       </div>
     );

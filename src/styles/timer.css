@@ -1,0 +1,14 @@
+.showTimer input {
+    width : 330px;
+    height : 150px;
+    border-color: black;
+    border-width: thick;
+    font-size: 60px;
+}
+
+.countFooter {
+    margin-top : 400px;
+    font-size: 25px;
+    margin-left: -950px;
+    clear: both;
+}
